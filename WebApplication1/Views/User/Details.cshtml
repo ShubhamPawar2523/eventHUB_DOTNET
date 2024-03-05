@@ -1,0 +1,65 @@
+﻿@model WebApplication2.Models.Booking
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div>
+    <h4>Booking Details</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SelectEventDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SelectEventDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SelectEventStartingTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SelectEventStartingTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SelectHotel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SelectHotel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SelectEvent)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SelectEvent)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SelectEventTiming)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SelectEventTiming)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalNumberOfGuests)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalNumberOfGuests)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-controller="Bookings" asp-action="Delete" asp-route-id="@Model?.Id">Delete</a> 
+
+</div>

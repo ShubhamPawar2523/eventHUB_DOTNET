@@ -1,0 +1,96 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<WebApplication2.Models.Booking>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+    <style>
+        .custom-table {
+            width: 60%; /* Adjust the width as per your requirement */
+        }
+
+            .custom-table th, .custom-table td {
+                width: 80%; /* You can set a specific width if needed */
+            }
+    </style>
+</head>
+
+
+<h1>Booking Details</h1>
+
+<p>
+    @*<a asp-action="Create">Create New</a>*@
+</p>
+
+<table class="table table-hover custom-table">
+    <thead>
+        <tr class="table-primary">
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelectEventDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelectEventStartingTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelectHotel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelectEvent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelectEventTiming)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalNumberOfGuests)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectEventDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectEventStartingTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectHotel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectEvent)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectEventTiming)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalNumberOfGuests)
+                </td>
+                <td>
+                    @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
+                    <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.Id">Details</a>
+                    @* <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

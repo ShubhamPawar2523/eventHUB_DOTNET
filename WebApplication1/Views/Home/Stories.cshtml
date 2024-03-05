@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "Stories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Stories</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .flex {
+            background-color: #f1eded;
+            padding: 10px;
+        }
+
+        .float {
+            float: right;
+        }
+
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 40px;
+        }
+
+        .container {
+            max-width: 95%;
+            width: 95%;
+            margin: 20px auto;
+        }
+
+        h3 {
+            text-align: left;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .video-row {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .video-card {
+            width: 33.33%;
+            padding: 0 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>Customer Stories</h2>
+    <hr />
+    <div class="container">
+        <div class="video-row">
+            <!-- Replace this section with dynamic rendering using JavaScript -->
+            <div class="video-card">
+                <iframe width="1263" height="496" src="https://www.youtube.com/embed/XdAswc1sUvc" title="Cvent Event Management Review: Choose Cvent for event optimization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-card">
+                <iframe width="1263" height="496" src="https://www.youtube.com/embed/pQpEHV9YU4M" title="Cvent Event Management Review: One-stop for Event Customer experience" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-card">
+                <iframe width="379" height="284" src="https://www.youtube.com/embed/k6bU7ZpF7ho" title="Cvent Event Management Review: Cvent offers multi-function backend management for event production" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video-row">
+            <!-- Replace this section with dynamic rendering using JavaScript -->
+            <div class="video-card">
+                <iframe width="379" height="284" src="https://www.youtube.com/embed/HLqY-kVmrIQ" title="Cvent Event Management Review: One-Stop for Event Management and Registration Needs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-card">
+                <iframe width="379" height="284" src="https://www.youtube.com/embed/DOsSTfTglW4" title="Cvent Event Management Review: Event planning made simple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-card">
+                <iframe width="379" height="284" src="https://www.youtube.com/embed/OyN3P4nPqqs" title="Cvent Review: Events with Great Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
